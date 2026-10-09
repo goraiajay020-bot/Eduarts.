@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>এডুয়েলস - আপনার সফলতার ঠিকানা</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navbar */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0056b3;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0056b3;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffc107;
+            color: #333;
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e0a800;
+        }
+
+        /* Sections */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: #0056b3;
+        }
+
+        /* Courses Grid */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .course-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card i {
+            font-size: 40px;
+            color: #0056b3;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .contact-form button:hover {
+            background: #004085;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Mobile Menu */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">এডুয়েলস (Edueals)</div>
+            <ul class="nav-links">
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                <li><a href="#courses">কোর্সসমূহ</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>আপনার উজ্জ্বল ভবিষ্যতের সঠিক নির্দেশিকা</h1>
+        <p>এডুয়েলস টিউটোরিয়াল সেন্টারে আপনাকে স্বাগতম। দক্ষ শিক্ষকদের তত্ত্বাবধানে আপনার পড়াশোনাকে করুন আরও সহজ ও কার্যকরী।</p>
+        <a href="#contact" class="btn">আজই ভর্তি হোন</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="section-title">
+            <h2>আমাদের সম্পর্কে</h2>
+        </div>
+        <p style="text-align: center; max-width: 800px; margin: auto; font-size: 18px;">
+            এডুয়েলস হলো একটি আধুনিক শিক্ষাপ্রতিষ্ঠান, যেখানে ছাত্র-ছাত্রীদের মানসম্মত শিক্ষা এবং সঠিক পথপ্রদর্শন নিশ্চিত করা হয়। আমাদের লক্ষ্য প্রতিটি শিক্ষার্থীকে তাদের সর্বোচ্চ Potenzial বা সম্ভাবনায় পৌঁছাতে সাহায্য করা।
+        </p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container" style="background: #fff;">
+        <div class="section-title">
+            <h2>আমাদের কোর্সসমূহ</h2>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card">
+                <i class="fas fa-calculator"></i>
+                <h3>গণিত ও বিজ্ঞান</h3>
+                <p>ষষ্ঠ থেকে দ্বাদশ শ্রেণি পর্যন্ত গভীর ধারণা ও সহজ সমাধান।</p>
+            </div>
+            <div class="course-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>বেসিক কম্পিউটার কোর্স</h3>
+                <p>মৌলিক কম্পিউটার ও ফ্রিল্যান্সিংয়ের প্রাথমিক ধারণা।</p>
+            </div>
+            <div class="course-card">
+                <i class="fas fa-language"></i>
+                <h3>স্পোকেন ইংলিশ</h3>
+                <p>সহজ উপায়ে সাবলীল ইংরেজি বলার কার্যকরী কোর্স।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class="section-title">
+            <h2>যোগাযোগ করুন</h2>
+        </div>
+        <div class="contact-box">
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('ধন্যবাদ! আপনার বার্তাটি পাঠানো হয়েছে।');">
+                <input type="text" placeholder="আপনার নাম" required>
+                <input type="email" placeholder="আপনার ইমেইল" required>
+                <input type="text" placeholder="মোবাইল নম্বর" required>
+                <textarea rows="4" placeholder="আপনার বার্তা বা প্রশ্ন..." required></textarea>
+                <button type="submit">বার্তা পাঠান</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Edueals. All Rights Reserved.</p>
+    </footer>
+
+</body>
+  </html>
+  
